@@ -1,3 +1,6 @@
 {
+  "framework": null,
+  "buildCommand": "uvx --from mkdocs-material --with mkdocs-redirects --with mkdocs-awesome-pages-plugin mkdocs build",
+  "outputDirectory": "site",
   "trailingSlash": true
 }
