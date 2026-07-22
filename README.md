@@ -20,3 +20,7 @@ uv sync
 uv run mkdocs serve # To run the documentation locally and see changes.
 uv run mkdocs build # To build for deployment on a static hosting.
 ```
+
+## Vercel deployment hardening
+
+This fork includes Vercel security headers in `vercel.json` while preserving the MkDocs build command and `site` output directory.
