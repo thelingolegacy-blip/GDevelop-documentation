@@ -144,3 +144,57 @@ article .video-container > video {
     width: 100%
   }
 }
+
+/* Studio UI v2 documentation skin: visual polish only; user-facing docs content stays unchanged. */
+:root {
+  --studio-doc-gold: #f7c84b;
+  --studio-doc-cyan: #56efff;
+  --studio-doc-violet: #8a55ff;
+}
+body[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #07070b;
+  --md-default-fg-color: #fff9e8;
+  --md-primary-fg-color: #6f44e8;
+  --md-accent-fg-color: var(--studio-doc-gold);
+  background:
+    radial-gradient(circle at 14% 4%, rgba(138, 85, 255, 0.18), transparent 26rem),
+    radial-gradient(circle at 92% 8%, rgba(86, 239, 255, 0.12), transparent 25rem),
+    #07070b;
+}
+.md-header,
+.md-tabs {
+  backdrop-filter: blur(16px) saturate(1.2);
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.22);
+}
+.md-main__inner {
+  gap: 1.2rem;
+}
+.md-content__inner {
+  border: 1px solid rgba(247, 200, 75, 0.14);
+  border-radius: 24px;
+  padding: clamp(1rem, 2vw, 1.8rem);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+}
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  letter-spacing: -0.03em;
+}
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.14);
+}
+.md-sidebar .md-nav__link {
+  border-radius: 12px;
+}
+.md-sidebar .md-nav__link:hover {
+  background: rgba(247, 200, 75, 0.08);
+}
+@media screen and (max-width: 76.1875em) {
+  .md-content__inner {
+    border-radius: 18px;
+    padding: 0.9rem;
+  }
+}

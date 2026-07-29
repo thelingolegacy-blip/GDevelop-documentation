@@ -34,3 +34,8 @@ When dependencies are available, also run the documented MkDocs build command fr
 - Check pageviews, LCP, CLS, INP, and FCP after production deploy.
 - Log any broken-link, routing, clarity, or performance issue against the Docs world.
 - Fix in staging, validate again, review content quality, then redeploy.
+
+
+## Studio UI v2 skin
+
+The documentation deployment keeps its MkDocs flow and user-facing content rules while `docs/stylesheets/extra.css` adds the Studio UI v2 visual skin for improved contrast, panel depth, navigation hover states, and mobile content spacing.
