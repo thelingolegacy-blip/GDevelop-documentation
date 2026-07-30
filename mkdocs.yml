@@ -76,9 +76,11 @@ extra:
       name: GDevelop on LinkedIn
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/studio-production-assets.css
 extra_javascript:
   - javascript/autoScrollNavigation.js
   - javascript/translate.js
+  - javascript/studio-production-assets.js
 markdown_extensions:
   # For buttons:
   - attr_list

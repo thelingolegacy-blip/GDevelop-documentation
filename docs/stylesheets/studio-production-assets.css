@@ -1,0 +1,33 @@
+/* Vercel studio skin for the deployed documentation shell. Keeps docs content unchanged. */
+:root {
+  --studio-gold: #f7ca4c;
+  --studio-cyan: #54e8ff;
+  --studio-line: rgba(247, 202, 76, .34);
+}
+.md-header,
+.md-tabs {
+  background: linear-gradient(90deg, #08080d, #111827 48%, #07070b);
+}
+.md-header {
+  border-bottom: 1px solid var(--studio-line);
+  box-shadow: 0 10px 36px rgba(0,0,0,.24);
+}
+.md-main {
+  background:
+    radial-gradient(circle at 6% 0, rgba(84,232,255,.08), transparent 22rem),
+    radial-gradient(circle at 90% 8%, rgba(247,202,76,.07), transparent 20rem);
+}
+.md-content__inner {
+  border-radius: .9rem;
+}
+.md-typeset a { text-underline-offset: .18em; }
+.md-typeset .md-button {
+  border-radius: 999px;
+}
+.md-typeset table:not([class]) {
+  border-radius: .65rem;
+  overflow: hidden;
+}
+@media (prefers-color-scheme: dark) {
+  .md-typeset code { border: 1px solid rgba(84,232,255,.18); }
+}
