@@ -39,3 +39,9 @@ When dependencies are available, also run the documented MkDocs build command fr
 ## Studio UI v2 skin
 
 The documentation deployment keeps its MkDocs flow and user-facing content rules while `docs/stylesheets/extra.css` adds the Studio UI v2 visual skin for improved contrast, panel depth, navigation hover states, and mobile content spacing.
+
+## Studio production assets pass
+
+- `docs/stylesheets/studio-production-assets.css` adds higher-contrast shell polish, rounded action controls, and documentation-friendly UI/UX improvements without changing user-facing docs copy.
+- `docs/javascript/studio-production-assets.js` marks the documentation shell as studio-production-ready and emits a lightweight Vercel Analytics event when available.
+- Monetization notes stay documentation-safe: publishing and monitoring readiness are visible, but no payment, ad, or wagering behavior is introduced into the docs site.
